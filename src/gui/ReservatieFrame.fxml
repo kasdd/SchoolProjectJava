@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Datum: " />
+                  <DatePicker fx:id="datePicker" />
+               </children>
+            </VBox>
+            <VBox layoutX="205.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="filter: " />
+                        <TextField fx:id="filterTextField" />
+                        <Label text="kolom: " />
+                        <ComboBox fx:id="filterComboBox" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="errorLabel" maxWidth="1.7976931348623157E308" text="errorLabel" textFill="#fc0101" visible="false" />
+                  <TableView fx:id="reservatieTable">
+                    <columns>
+                        <TableColumn fx:id="naamColumn" prefWidth="75.0" text="Naam" />
+                        <TableColumn fx:id="beginDatumColumn" prefWidth="75.0" text="Begindatum" />
+                        <TableColumn fx:id="eindDatumColumn" prefWidth="75.0" text="Einddatum" />
+                        <TableColumn fx:id="materiaalColumn" prefWidth="75.0" text="Aantal materialen" />
+                    </columns>
+                  </TableView>
+                  <AnchorPane fx:id="detailAnchorPane" prefHeight="400.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

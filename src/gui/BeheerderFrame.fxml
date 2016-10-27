@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="698.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox />
+      <TableView fx:id="beheerTable" prefHeight="343.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="emailColumn" prefWidth="131.0" text="Email " />
+          <TableColumn fx:id="typeColumn" minWidth="-1.0" prefWidth="147.0" text="Type" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtFieldEmail" layoutY="343.0" prefHeight="25.0" prefWidth="188.0" text="docent@hogent.be" />
+      <Button fx:id="btnVoegToe" layoutX="352.0" layoutY="343.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Voeg toe" />
+      <Label fx:id="errorLabel" layoutX="325.0" layoutY="378.0" />
+      <ComboBox fx:id="comboBox" layoutX="196.0" layoutY="343.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox1" layoutX="6.0" layoutY="374.0" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="btnVerwijder" layoutX="202.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Verwijder" />
+   </children>
+</fx:root>

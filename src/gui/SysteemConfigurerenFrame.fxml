@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root id="AnchorPane" prefHeight="572.0" prefWidth="856.0" type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="0.0" prefWidth="7.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="10.0" prefWidth="153.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.0" minWidth="0.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="166.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="443.0" minWidth="10.0" prefWidth="443.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="3.0" prefHeight="7.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="334.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="521.0" minHeight="10.0" prefHeight="506.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="111.0" text="Reservatieperiode" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Maximale verlenging" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField text="Aantal dagen" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField text="Aantal dagen" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label text="Ophaaldag" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Indiendag" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ChoiceBox prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <ChoiceBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <ChoiceBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" text="Voeg doelgroep toe" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" text="Voeg leergebied toe" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+   </children>
+</fx:root>

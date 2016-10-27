@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="15.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="615.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Gebruikersnaam:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Begindatum:" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="66.0" text="Aantal stuk uitgeleend:" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="wijzigButton" mnemonicParsing="false" prefWidth="130.0" text="wijzigingen opslaan" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="errorLabel" text="Label" textFill="#fc0101" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="6" />
+            <Button fx:id="verwijderButton" mnemonicParsing="false" prefWidth="130.0" text="Materiaal verwijderen" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <ListView fx:id="reservatieDetailListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+            <Label fx:id="naamLabel" text="Naam" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="66.0" text="Aantal stuk afgehaald:" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <DatePicker fx:id="beginDatumDatePicker" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="datumButton" mnemonicParsing="false" text="Reservatiedatum opslaan" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="reservatieVerwijderButton" mnemonicParsing="false" text="Reservatie verwijderen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="13.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="186.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="12.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="145.0" />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="560.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="560.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="560.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</fx:root>

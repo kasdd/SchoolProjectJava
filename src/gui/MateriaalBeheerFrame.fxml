@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" maxWidth="1.7976931348623157E308" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="131.0" layoutY="92.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label text="Filter: " />
+                  <TextField fx:id="filterTextField" maxWidth="1.7976931348623157E308" prefWidth="300.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></TextField>
+                  <ComboBox fx:id="filterComboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <Label fx:id="errorLabel" maxWidth="1.7976931348623157E308" text="Label" textFill="#fc0101" visible="false" />
+            <TableView fx:id="materiaalTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+              <columns>
+                <TableColumn fx:id="naamColumn" minWidth="120.0" prefWidth="120.0" text="Naam" />
+                <TableColumn fx:id="omschrijvingColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Omschrijving" />
+                  <TableColumn fx:id="aantalColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Aantal" />
+                  <TableColumn fx:id="doelgroepColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Doelgroep" />
+                  <TableColumn fx:id="leergebiedColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Leergebied" />
+                  <TableColumn fx:id="plaatsColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Plaats" />
+                  <TableColumn fx:id="firmaColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Firma" />
+                  <TableColumn fx:id="prijsColumn" maxWidth="1.7976931348623157E308" minWidth="120.0" prefWidth="120.0" text="Prijs" />
+              </columns>
+            </TableView>
+            <AnchorPane fx:id="detailAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </children>
+</fx:root>
